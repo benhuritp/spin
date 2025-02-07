@@ -8,6 +8,7 @@ import tasksIcon from "@/public/tasks.svg"
 import ticketIcon from "@/public/ticket.png"
 import friendsIcon from "@/public/friends.svg"
 import walletIcon from "@/public/wallet.svg"
+import arrowIcon from "@/public/arrow.png"
 import { segments } from "./segments";
 import { colorMap, glowColors } from "./colors";
 import Link from "next/link";
@@ -147,7 +148,7 @@ const FortuneWheel = () => {
               filter: isSpinning ? `drop-shadow(0 0 10px ${glowColors[currentColorIndex]})` : '',
               transition: 'filter 0.3s ease-in-out'
             }}
-            src={"/arrow.png"}
+            src={arrowIcon.src}
             width={24}
             height={41}
             alt="Arrow"
