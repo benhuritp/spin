@@ -89,8 +89,7 @@ const FortuneWheel = () => {
       <div className="text-center uppercase mb-[5px]">LTX</div>
       <div className="font-montserrat font-bold text-center text-[22px]">100.000.000</div>
       <div className="flex flex-col items-center justify-center gap-8 mt-[32px]">
-
-        <div className="relative w-[270px] h-[270px] lg:w-[325px] lg:h-[325px]  border-[3px] border-[#3E3E3E] rounded-full ">
+        <div className="relative w-[270px] h-[270px] lg:w-[325px] lg:h-[325px] overflow-hidden  border-[3px] border-[#3E3E3E] rounded-full ">
           <div
             className="absolute w-full border-[3px] border-[#161616]  overflow-hidden h-full rounded-full shadow-lg transition-transform ease-out"
             style={{
@@ -159,7 +158,7 @@ const FortuneWheel = () => {
       </div>
 
 
-      {winner && (
+      {winner ? (
         <div className="mt-[20px] mb-[15px] flex justify-center">
           {
             winner === "NFT GOLD" ? (
@@ -210,7 +209,7 @@ const FortuneWheel = () => {
             ) : null
           }
         </div>
-      )}
+      ): <div className="mt-[20px] mb-[15px] min-h-[44px]"></div>}
       {isModalOpen && (
         <div
           onClick={() => setIsModalOpen(false)}
