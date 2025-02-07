@@ -13,7 +13,7 @@ import { segments } from "./segments";
 import { colorMap, glowColors } from "./colors";
 import Link from "next/link";
 const FortuneWheel = () => {
-  const SPIN_DURATION = 1000; // Время вращения в миллисекундах
+  const SPIN_DURATION = 3000; // Время вращения в миллисекундах
 
 
 
