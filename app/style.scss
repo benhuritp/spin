@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-brand: 47 100% 50%;
+  --color-purple: 281 100% 42%;
+  --color-red: 0 100% 50%;
+  --color-blue: 202 100% 50%;
+}
+
+body {
+  @apply bg-black text-white font-inter
+}
