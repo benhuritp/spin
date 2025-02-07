@@ -88,7 +88,7 @@ const FortuneWheel = () => {
       <Image className="mx-auto mb-[10px]" src={logo.src} width={50} height={50} alt="Coin" />
       <div className="text-center uppercase mb-[5px]">LTX</div>
       <div className="font-montserrat font-bold text-center text-[22px]">100.000.000</div>
-      <div className="flex flex-col items-center justify-center gap-8 mt-[32px]">
+      <div className="relative flex flex-col items-center justify-center gap-8 mt-[32px]">
         <div className="relative w-[280px] h-[280px] lg:w-[325px] lg:h-[325px] overflow-hidden  border-[3px] border-[#3E3E3E] rounded-full ">
           <div
             className="absolute w-full border-[3px] border-[#161616]  overflow-hidden h-full rounded-full shadow-lg transition-transform ease-out"
@@ -141,7 +141,9 @@ const FortuneWheel = () => {
             alt="Logo"
           />
 
-          <Image
+      
+        </div>
+        <Image
             className="absolute top-0 left-[50%] -translate-x-1/2 -translate-y-[30px] z-10"
             style={{
               filter: isSpinning ? `drop-shadow(0 0 10px ${glowColors[currentColorIndex]})` : '',
@@ -152,8 +154,6 @@ const FortuneWheel = () => {
             height={41}
             alt="Arrow"
           />
-        </div>
-
 
       </div>
 
