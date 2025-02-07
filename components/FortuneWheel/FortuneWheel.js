@@ -83,14 +83,14 @@ const FortuneWheel = () => {
 
   return (
 
-    <div className="max-w-[400px] lg:max-w-[450px] px-[15px] mx-auto pt-[20px] pb-[20px] min-h-[100vh] flex flex-col">
+    <div className="max-w-[400px] lg:max-w-[450px] px-[15px] mx-auto pt-[15px] pb-[15px] min-h-[100vh] flex flex-col">
  
-      <Image className="mx-auto mb-[10px]" src={logo.src} width={60} height={60} alt="Coin" />
+      <Image className="mx-auto mb-[10px]" src={logo.src} width={50} height={50} alt="Coin" />
       <div className="text-center uppercase mb-[5px]">LTX</div>
       <div className="font-montserrat font-bold text-center text-[22px]">100.000.000</div>
-      <div className="flex flex-col items-center justify-center gap-8 mt-[30px]">
+      <div className="flex flex-col items-center justify-center gap-8 mt-[32px]">
 
-        <div className="relative w-[325px] h-[325px]  border-[3px] border-[#3E3E3E] rounded-full ">
+        <div className="relative w-[270px] h-[270px] lg:w-[325px] lg:h-[325px]  border-[3px] border-[#3E3E3E] rounded-full ">
           <div
             className="absolute w-full border-[3px] border-[#161616]  overflow-hidden h-full rounded-full shadow-lg transition-transform ease-out"
             style={{
@@ -160,7 +160,7 @@ const FortuneWheel = () => {
 
 
       {winner && (
-        <div className="mt-[20px] flex justify-center">
+        <div className="mt-[20px] mb-[15px] flex justify-center">
           {
             winner === "NFT GOLD" ? (
               <div className="flex gap-[7px] items-center">
